@@ -13,5 +13,13 @@
     "unicornhat"
   ],
   "author": "JT",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Normola/OpenVPNNotifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Normola/OpenVPNNotifier/issues"
+  },
+  "homepage": "https://github.com/Normola/OpenVPNNotifier#readme"
 }
