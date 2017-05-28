@@ -35,5 +35,4 @@ function parse(err, data) {
     } else {
         return console.log('Unusual data returned');
     }
-    console.log(data);
 }
