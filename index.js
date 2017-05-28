@@ -30,7 +30,7 @@ function parse(err, data) {
 
     if (data.indexOf('Common Name' >= 0) && data.indexOf('ROUTING TABLE') >= 0) {
         var csv = data.substring(data.indexOf('Common Name'), data.indexOf('ROUTING TABLE'));
-        csv = csv.substring(csv.indexOf('/n'));
+        csv = csv.substring(csv.indexOf('Connected Since'));
         // Check for name UNDEF!
         console.log(csv);
     } else {
