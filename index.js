@@ -6,8 +6,6 @@ var watcher = chokidar.watch(vpnLogFile, {
     ignored: /[\/\\]\./
 });
 
-var log = console.bind.log(console);
-
 watcher
     .on('change', function() { change(); })
     .on('error', function(error) { watchError(error); })
@@ -22,7 +20,7 @@ function change() {
 }
 
 function watchError(error) {
-    log("There was an error. ", error);
+    console.log("There was an error. ", error);
 }
 
 function parse(err, data) {
