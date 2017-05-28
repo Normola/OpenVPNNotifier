@@ -36,6 +36,9 @@ function parse(err, data) {
         // Check for name UNDEF!
         // Common Name,Real Address,Bytes Received,Bytes Sent,Connected Since
         console.log(csv);
+        while (csv.indexOf('\n\n') >= 0) {
+            csv = csv.replace('\n\n', '\n');
+        }
 
         var entries = csv.split('\n');
 
