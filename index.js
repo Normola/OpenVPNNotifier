@@ -28,5 +28,12 @@ function parse(err, data) {
         return console.log(err);
     }
 
+    if (data.indexOf('Common Name' >= 0) && data.indexOf('ROUTING TABLE') >= 0) {
+        var csv = data.substring(data.indexOf('Common Name'), data.indexOf('ROUTING TABLE'));
+
+        console.log(csv);
+    } else {
+        return console.log('Unusual data returned');
+    }
     console.log(data);
 }
