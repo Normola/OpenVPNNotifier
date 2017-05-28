@@ -34,7 +34,15 @@ function parse(err, data) {
         csv = csv.replace('Connected Since\n', '');
 
         // Check for name UNDEF!
+        // Common Name,Real Address,Bytes Received,Bytes Sent,Connected Since
         console.log(csv);
+
+        var entries = csv.split('\n');
+
+        entries.forEach(function(entry) {
+            console.log('"' + entry + '"');
+        }, this);
+
     } else {
         return console.log('Unusual data returned');
     }
