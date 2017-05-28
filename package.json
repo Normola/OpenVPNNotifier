@@ -1,0 +1,17 @@
+{
+  "name": "openvpnnotifier",
+  "version": "1.0.0",
+  "description": "A Notifier for OpenVPN Servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "test index.js"
+  },
+  "keywords": [
+    "OpenVPN",
+    "Notifer",
+    "LEDs",
+    "unicornhat"
+  ],
+  "author": "JT",
+  "license": "ISC"
+}
